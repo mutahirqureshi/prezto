@@ -33,3 +33,6 @@
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "modules/prompt/external/garrett"]
+	path = modules/prompt/external/garrett
+	url = https://github.com/mutahirqureshi/zsh-prompt-garrett.git
