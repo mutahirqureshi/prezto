@@ -13,3 +13,5 @@ fi
 # Customize to your needs...
 alias git=hub
 
+# set up direnv
+eval "$(direnv hook zsh)"
