@@ -15,3 +15,5 @@ alias git=hub
 
 # set up direnv
 eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
