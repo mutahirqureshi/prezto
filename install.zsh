@@ -23,5 +23,7 @@ for rcfile in "$DIR"/runcoms/^README.md(.N); do
   create_link "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
+create_link "${DIR}" "${ZDOTDIR:-$HOME}/.zprezto"
+
 chsh -s /bin/zsh
 
