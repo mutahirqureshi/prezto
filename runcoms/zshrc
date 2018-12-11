@@ -17,3 +17,5 @@ alias git=hub
 eval "$(direnv hook zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /etc/bash_completion.d/g4d
