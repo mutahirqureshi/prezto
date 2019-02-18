@@ -7,7 +7,7 @@
 
 # Load ~/.profile
 if [[ -s "$HOME/.profile" ]]; then
-  emulate sh -c '. $SHOME/.profile'
+  emulate sh -c '. $HOME/.profile'
 fi
 
 #
