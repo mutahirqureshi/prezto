@@ -11,12 +11,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias git=hub
+
+# Load ~/.aliases
+if [[ -s "$HOME/.aliases" ]]; then
+  source "$HOME/.aliases"
+fi
 
 # set up direnv
 eval "$(direnv hook zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[ -f /etc/bash_completion.d/g4d ] && source /etc/bash_completion.d/g4d
+# Source .zshrc.local if it exists
+if [[ -s "$HOME/.zshrc.local" ]]; then
+  source "$HOME/.zshrc.local"
+fi
 

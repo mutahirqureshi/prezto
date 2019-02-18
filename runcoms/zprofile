@@ -5,6 +5,11 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Load ~/.profile
+if [[ -s "$HOME/.profile" ]]; then
+  emulate sh -c '. $SHOME/.profile'
+fi
+
 #
 # Browser
 #
@@ -62,10 +67,3 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
-emulate sh -c '. ~/.profile'
-
-#
-# Google Cloud SDK
-#
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
