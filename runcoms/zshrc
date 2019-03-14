@@ -27,3 +27,6 @@ if [[ -s "$HOME/.zshrc.local" ]]; then
   source "$HOME/.zshrc.local"
 fi
 
+# For tmux-yank to work
+bindkey -e
+
