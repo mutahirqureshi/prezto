@@ -20,6 +20,8 @@ fi
 # set up direnv
 eval "$(direnv hook zsh)"
 
+# set up FZF autocompletion and shell bindings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Source .zshrc.local if it exists
 if [[ -s "$HOME/.zshrc.local" ]]; then
