@@ -22,6 +22,7 @@ eval "$(direnv hook zsh)"
 
 # set up FZF autocompletion and shell bindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 # Source .zshrc.local if it exists
 if [[ -s "$HOME/.zshrc.local" ]]; then
