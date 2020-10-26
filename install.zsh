@@ -27,5 +27,5 @@ done
 
 create_link "${DIR}" "${ZDOTDIR:-$HOME}/.zprezto"
 
-chsh -s /bin/zsh
+chsh -s zsh
 
